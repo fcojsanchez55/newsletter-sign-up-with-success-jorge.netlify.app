@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-Slate-Grey);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+:root {
+  /* ### Primary */
+
+  --Tomato: #ff6257;
+
+  /* ### Neutral */
+
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: #9294a0;
+  --White: hsl(0, 0%, 100%);
+
+  /* font */
+  /* .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      } */
+}
+
+main {
+  width: 927px;
+  height: 643px;
+  /* border: solid 1px red; */
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--White);
+  color: var(--Dark-Slate-Grey);
+}
+
+main .container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+main .container section {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 60px 60px;
+}
+
+.header h1 {
+  font-size: 3.6em;
+  font-weight: 600;
+  color: var(--Dark-Slate-Grey);
+  margin-top: 30px;
+  
+}
+
+.header p {
+  margin: 20px 10px 20px 0px;
+}
+
+
+
+
+.updates p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.updates p:last-of-type {
+  margin-bottom: 0px;
+}
+
+.updates span {
+  margin-right: 10px;
+}
+
+.form fieldset {
+  border: none;
+}
+
+.form {
+  margin-top: 30px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.emailError {
+  color: var(--Tomato);
+}
+/* .form fieldset .errorField{
+    color: var(--Tomato);
+    border: solid 1px;
+} */
+
+.form input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: solid 1px var(--Grey);
+}
+
+.form input:hover {
+  border: solid 1px var(--Dark-Slate-Grey);
+  color: var(--Dark-Slate-Grey);
+}
+
+.form input:hover::placeholder {
+  color: var(--Dark-Slate-Grey);
+}
+
+.form a button {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: var(--Dark-Slate-Grey);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.form a button:hover {
+  background: rgb(255, 34, 34);
+  background: linear-gradient(
+    304deg,
+    rgba(255, 34, 34, 1) 0%,
+    rgba(255, 98, 87, 1) 35%,
+    rgba(193, 75, 75, 1) 98%
+  );
+  box-shadow: rgba(193, 75, 75, 0.1) 0px 14px 28px, rgba(255, 98, 87, 0.22) 0px 10px 10px;
+}
+
+.success {
+  width: 506px;
+  height: 520px;
+  background-color: var(--White);
+  border-radius: 30px;
+  color: var(--Dark-Slate-Grey);
+  padding: 3.5em;
+}
+
+.success p {
+  padding-right: 10px;
+  line-height: 25px;
+}
+
+.success > *:not(:first-child) {
+  margin-top: 30px;
+}
+
+.success .dismissBtn {
+  width: 100%;
+  height: 50px;
+  background-color: var(--Dark-Slate-Grey);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.success .dismissBtn:hover {
+  background: rgb(255, 34, 34);
+  background: linear-gradient(
+    304deg,
+    rgba(255, 34, 34, 1) 0%,
+    rgba(255, 98, 87, 1) 35%,
+    rgba(193, 75, 75, 1) 98%
+  );
+  box-shadow: rgba(193, 75, 75, 0.1) 0px 14px 28px, rgba(255, 98, 87, 0.22) 0px 10px 10px;
+  
+}
+
+.success h3 {
+  font-size: 3em;
+}
+
+.attribution {
+  font-size: 16px;
+}
+.attribution a {
+  color: var(--White);
+}
+
+
+/* MediaQuery */
+
+@media (max-width: 750px) {
+  body {
+    background-color: var(--White);
+    
+    }
+
+  .main{
+    height: 100%;
+  }
+
+  .main .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  main .container section {
+    order: 1;
+
+  }
+
+  .header h1 {
+    font-size: 2.8em;
+    margin-top: -30px;
+  }
+
+  .header p {
+
+    margin-right: 20px;
+    letter-spacing: 0.6px;
+
+  }
+  
+
+  .updates {
+    order: 2;
+    margin-right: 20px;
+    letter-spacing: 0.5px;
+
+  }
+
+
+  .form{
+    order: 3;
+  }
+
+  .form-label{
+    font-size: 12px;
+  }
+
+
+
+  .success .dismissBtn{
+    margin-top: 15rem;
+  }
+
+  .attribution {
+    color: var(--Dark-Slate-Grey);
+  
+}
+
+  .attribution a {
+      color: var(--Dark-Slate-Grey);
+  }
+}

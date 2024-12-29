@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+
+  <title>
+    Frontend Mentor | Newsletter sign-up form with success message
+  </title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main class="main">
+    <div class="container">
+      <section>
+        <div class="header">
+          <h1>
+            Stay updated!
+          </h1>
+          <p>
+            Join 60,000+ product managers receiving monthly updates
+            on:
+          </p>
+        </div>
+
+
+        <div class="updates">
+          <p>
+            <span><img src="assets/images/icon-list.svg" alt=""></span> Product discovery and building what matters
+          </p>
+          <p>
+            <span><img src="assets/images/icon-list.svg" alt=""></span> Measuring to ensure updates are a success
+          </p>
+
+          <p>
+            <span><img src="assets/images/icon-list.svg" alt=""></span> And much more!
+          </p>
+        </div>
+
+        <form class="form">
+          <fieldset>
+            <div class="form-label">
+              <label class="labelField" for="">Email address</label><span class="emailError"></span>
+            </div>
+            <input class="inputField" type="email" placeholder="email@company.com">
+            <a href="">
+              <button class="btn">Subscribe to monthly newsletter</button>
+            </a>
+          </fieldset>
+        </form>
+      </section>
+      <picture>
+        <source srcset="assets/images/illustration-sign-up-mobile.svg" media="(max-width: 740px)">
+        <source srcset="assets/images/illustration-sign-up-desktop.svg" media="(max-width: 750px)">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="Descripción de la imagen">
+      </picture>
+    </div>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+      href="https://github.com/fcojsanchez55">
+      Jose Jorge Sanchez</a>.
+  </div>
+  <script src="app.js"></script>
+  
+</body>
+
+</html>
