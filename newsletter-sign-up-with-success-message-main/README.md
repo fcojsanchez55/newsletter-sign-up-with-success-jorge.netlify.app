@@ -10,8 +10,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message-main-yvpN4HmDSU)
-- Live Site URL: [Add live site URL here](https://newsletter-sign-up-with-success-jorge.netlify.app/)
+- Solution URL: (https://www.frontendmentor.io/solutions/newsletter-sign-up-with-success-message-main-yvpN4HmDSU)
+- Live Site URL: (https://newsletter-sign-up-with-success-jorge.netlify.app/)
 
 ### Built with
 
@@ -25,8 +25,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ## Author
 
-- Website - [Add your name here](https://github.com/fcojsanchez55)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/fcojsanchez55)
+- Website - (https://github.com/fcojsanchez55)
+- Frontend Mentor - (https://www.frontendmentor.io/profile/fcojsanchez55)
 
 
 
